@@ -10,7 +10,8 @@ let package = Package(
     targets: [
         .target(
             name: "IGListKit",
-            path: "Source/IGListKit"
+            path: "Source/IGListKit",
+            dependencies: ["IGListDiffKit"]
         ),
         .target(
             name: "IGListDiffKit",
