@@ -12,22 +12,12 @@ let package = Package(
             name: "IGListKit",
             dependencies: ["IGListDiffKit"],
             path: "Source/IGListKit",
-            publicHeadersPath: "include",
-            cSettings: [
-                //Config header path
-                .headerSearchPath("."),
-                .headerSearchPath("Internal"),
-            ]
+            publicHeadersPath: "include"
         ),
         .target(
             name: "IGListDiffKit",
             path: "Source/IGListDiffKit",
-            publicHeadersPath: "include",
-            cSettings: [
-                //Config header path
-                .headerSearchPath("."),
-                .headerSearchPath("Internal"),
-            ]
+            publicHeadersPath: "include"
         )
     ]
 )
